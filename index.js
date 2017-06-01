@@ -6,10 +6,10 @@ var redis = require('redis'),
 
 require('express')().listen(process.env.PORT);
 
-var http = require("https://rossie.herokuapp.com/");
+/*var http = require("https://jkuatbot.herokuapp.com/");
 setInterval(function() {
   http.get("");
-}, 300000) 
+}, 300000) */
 
 var db = redis.createClient(config.redis.url);
 
