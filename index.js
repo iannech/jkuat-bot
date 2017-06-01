@@ -6,7 +6,7 @@ var redis = require('redis'),
 
 require('express')().listen(process.env.PORT);
 
-var http = require("http");
+var http = require("https://rossie.herokuapp.com/");
 setInterval(function() {
   http.get("");
 }, 300000) 
