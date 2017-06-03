@@ -43,7 +43,7 @@ tbot.on('message', (msg) => {
         return;
       }
       var output = res.responses.join(' ');
-      tbot.sendMessage(fromId, output);
+      tbot.sendMessage(parse_mode = 'HTML',fromId, output);
       if (!clientName) {
         db.set('userid:' + fromId, res.client_name, redis.print);
       }
